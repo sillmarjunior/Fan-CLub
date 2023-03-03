@@ -3,10 +3,6 @@ function validaFaleConosco() {
 		alert("Preencha o campo Nome.");
 		document.frmfaleconosco.txtnome.focus();
 		return false;
-	} else if (document.frmfaleconosco.genero.value == "") {
-		alert("Selecione um dos campos, Gênero");
-		document.frmfaleconosco.genero.focus();
-		return false;
 	} else if (document.frmfaleconosco.nascimento.value == "") {
 		alert("Preencha o campo, Nascimento.");
 		document.frmfaleconosco.nascimento.focus();
@@ -22,6 +18,14 @@ function validaFaleConosco() {
 	} else if (document.frmfaleconosco.txtsenha.value == "") {
 		alert("Preencha o campo, Senha.");
 		document.frmfaleconosco.txtsenha.focus();
+		return false;
+	}else if (document.frmfaleconosco.genero.value == "") {
+		alert("Selecione um dos campos, Gênero");
+		document.frmfaleconosco.genero.focus();
+		return false;
+	}else if (document.frmfaleconosco.caixa.checked) {
+		alert("Selecione o campo, Desejo participar...");
+		document.frmfaleconosco.caixa.focus();
 		return false;
 	}
 	return true;
