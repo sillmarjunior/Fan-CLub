@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Site fã-club de carro">
+<meta name="keywords" content="muscle car, fã-clube, tuning">
+<meta name="author" content="Silmar Junior">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MusTuning Car</title>
+<link rel="stylesheet" type="text/css" href="../../css/site.css">
+<script src="../../js/site.js"></script>
+</head>
+<body>
+	<header>
+		<img alt="Logo fã-clube"
+			src="../../imgs/—Pngtree—turbo illustration black color_7361571.png">
+		<h1>MusTuning Car</h1>
+	</header>
+	<nav>
+		<a href="../../index.html"><div class="opcao">Início</div></a> <a
+			href="colecao.html"><div class="opcao">Coleção</div></a> <a
+			href="inscricao.html"><div class="opcao">Inscrever-se</div></a> <a
+			href="forum.html"><div class="opcao">Fórum</div></a>
+	</nav>
+	<section>
+		<h2>Inscreva-se no fã-clube!</h2>
+		<form name="frmfaleconosco" method="post" action="#"
+			onsubmit="return validaFaleConosco()">
+
+			<fieldset class="inscreverse">
+
+				<legend>Cadastre-se</legend>
+				<input type="text" name="txtnome" placeholder="Nome" id="nome"> <br>
+				<label for="gênero">Masculino:</label> <input type="radio" name="genero" id="gênero">
+				<label for="gênero">Feminino:</label> <input type="radio" name="genero" id="gênero"><br>
+				<input type="text" name="nascimento" placeholder="Data de Nascimento"><br>
+				<input type="email" name="txtemail" placeholder="E-mail" id="email"><br>
+				<input type="text" name="txtfone" placeholder="Telefone" id="fone"><br>
+				<input type="password" name="txtsenha" placeholder="Senha" id="senha">
+				<button type="submit">Enviar</button><button type="reset">Limpar</button>
+			</fieldset>
+		</form>
+	</section>
+	<footer>Copyright &copy; Silmar Junior 2022</footer>
+</body>
+</html>
