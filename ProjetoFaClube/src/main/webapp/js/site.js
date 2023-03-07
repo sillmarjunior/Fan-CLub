@@ -41,10 +41,8 @@ function validaFaleConosco() {
 		alert("Selecione um dos campos, Gênero");
 		document.frmfaleconosco.genero.focus();
 		return false;
-	} else if (document.frmfaleconosco.caixa.checked) {
-		alert("Selecione o campo, Desejo participar...");
-		document.frmfaleconosco.caixa.focus();
-		return false;
+	}else if(!document.getElementById("caixa").checked){
+		alert("Selecione o campo Desejo participar...");
 	}
 	return true;
 }
