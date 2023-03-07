@@ -6,16 +6,31 @@ function validaFaleConosco() {
 		alert("Preencha o campo Nome corretamente.");
 		document.frmfaleconosco.txtnome.focus();
 		return false;
-	} else if (document.frmfaleconosco.nascimento.value == "") {
-		alert("Preencha o campo, Nascimento.");
+	}
+	
+	var nasci = document.frmfaleconosco.nascimento.value;
+	var expRegNasci = new RegExp("^[0-9]{2}[/]{1}[0-9]{2}[/]{1}[0-9]{4}$");
+
+	if (!expRegNasci.test(nasci)) {
+		alert("Preencha o campo Nascimento corretamente.");
 		document.frmfaleconosco.nascimento.focus();
 		return false;
-	} else if (document.frmfaleconosco.txtemail.value == "") {
-		alert("Preencha o campo E-mail.");
+	}
+	
+	var email = document.frmfaleconosco.txtemail.value;
+	var expRegEmail = new RegExp("^[A-zÀ-ü]{3,}[@]{1}[A-zÀ-ü]{3,}$")
+
+	if (!expRegEmail.test(email)) {
+		alert("Preencha o campo E-mail corretamente.");
 		document.frmfaleconosco.txtemail.focus();
 		return false;
-	} else if (document.frmfaleconosco.txtfone.value == "") {
-		alert("Preencha o campo, Telefone.");
+	}
+	
+	var fone = document.frmfaleconosco.txtfone.value;
+	var expRegFone = new RegExp("^[(]{1}[0-9]{2}[)]{1}[0-9]{4,5}[-]{1}[0-9]{4}$")
+	
+	if (!expRegFone.test(fone)) {
+		alert("Preencha o campo, Telefone corretamente.");
 		document.frmfaleconosco.txtfone.focus();
 		return false;
 	} else if (document.frmfaleconosco.txtsenha.value == "") {
